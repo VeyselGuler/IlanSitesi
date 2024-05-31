@@ -1,0 +1,48 @@
+@{
+    ViewData["css"] = "/css/editor.css";
+    var filter = ViewData["filter"].ToString();
+}
+@model List<IlanModel>
+
+
+<div class="table-container">
+    <table>
+        <thead>
+        <tr>
+            <th>Başlık</th>
+            <th>
+                <a class="nav-link @(filter == "fiyat" ? "active" : "")" href="/home/editor/?filter=fiyat">Fiyat</a>
+            </th>
+            <th>
+                <a class="nav-link @(filter == "tarih" ? "active" : "")" href="/home/editor/?filter=tarih">Eklenme Tarihi</a>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price.ToString("N") TL</td>
+                <td>@item.Tarih</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <form action="/Home/Editor" method="post">
+        <h3>İlan Ekle</h3>
+        <label for="name">Başlık</label>
+        <input type="text" name="name" required>
+
+        <label for="price">Fiyat</label>
+        <input type="text" name="price" required>
+
+        <label for="img">Foto Url</label>
+        <input type="text" name="img">
+
+
+        <p>
+            <button>Ekle</button>
+        </p>
+    </form>
+</div>

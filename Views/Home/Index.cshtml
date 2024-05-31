@@ -1,0 +1,19 @@
+﻿@model List<IlanModel>
+@{
+    ViewData["css"] = "/css/site.css";
+}
+
+<div class="ad-section">
+    <h2>Son İlanlar</h2>
+    <div class="ad-list">
+        @foreach (var item in Model)
+        {
+            <div class="ad-card">
+                <img src="@item.Img" alt="@item.Name">
+                <div>@item.Name</div>
+                <div class="price">@item.Price.ToString("N") TL</div>
+            </div>
+        }
+    </div>
+
+</div>

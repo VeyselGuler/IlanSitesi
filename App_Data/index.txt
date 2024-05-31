@@ -1,0 +1,7 @@
+Ferrari 458 Spider|22000000|assets/img/ferrari-458.jpg|5/31/2024 ÖÖ 4:50:23
+Nissan GT-R|12000000|assets/img/nissan-gtr.jpg|5/31/2024 ÖÖ 4:50:23
+Ford Mustang|8000000|assets/img/ford-mustang.jpg|5/31/2024 ÖÖ 4:50:23
+Dodge Charger|7000000|assets/img/dodge-charger.jpg|5/31/2024 ÖÖ 4:50:23
+Lamborghini Huracan|18000000|assets/img/lambo-huracan.jpg|5/31/2024 ÖÖ 4:50:23
+Aston Martin DB11|25000000|assets/img/aston-martin-db11.jpg|5/31/2024 ÖÖ 4:50:23
+Tesla|5000002|/assets/img/tesla.jpg|5/31/2024 ÖÖ 5:03:55
